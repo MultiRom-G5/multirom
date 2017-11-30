@@ -184,7 +184,7 @@ int fb_open(int rotation)
     DEFAULT_FB_PARENT.w = fb_width;
     DEFAULT_FB_PARENT.h = fb_height;
 
-    fb_set_brightness(MULTIROM_DEFAULT_BRIGHTNESS);
+    fb_set_brightness(atoi(MULTIROM_DEFAULT_BRIGHTNESS));
 
     fb_update();
 

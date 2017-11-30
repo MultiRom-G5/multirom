@@ -770,7 +770,7 @@ int multirom_default_status(struct multirom_status *s)
     s->no_kexec = MR_NO_KEXEC;
 #endif
     s->colors = 0;
-    s->brightness = MULTIROM_DEFAULT_BRIGHTNESS;
+    s->brightness = atoi(MULTIROM_DEFAULT_BRIGHTNESS);
     s->enable_adb = 0;
     s->enable_kmsg_logging = 0;
     s->rotation = MULTIROM_DEFAULT_ROTATION;
